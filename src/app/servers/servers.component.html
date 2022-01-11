@@ -1,2 +1,8 @@
 <h3>Servers Component</h3>
-<app-server></app-server>
+<div class="container">
+  <button [disabled]="!allowNewServer" class="btn btn-primary">
+    Add Server
+  </button>
+  <p [innerText]="allowNewServer"></p>
+  <app-server></app-server>
+</div>
