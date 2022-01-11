@@ -16,6 +16,7 @@ export class ServersComponent {
   serverCreation: string = 'No server was created';
   serverCreated: boolean = false;
   serverName: string = '';
+  listOfServers: string[] = ['Testserver', 'Testserver2', 'Testserver3'];
 
   constructor() {
     setTimeout(() => {
