@@ -1,10 +1,18 @@
 <h3>Servers Component</h3>
 <div class="container">
-  <form>
+  <!-- <form>
     <input
       type="text"
       class="form-control"
       (input)="onUpdateServerName($event)"
+    />
+  </form> -->
+  <form>
+    <input
+      type="text"
+      class="form-control"
+      name="server"
+      [(ngModel)]="serverName"
     />
   </form>
   <button
