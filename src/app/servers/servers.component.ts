@@ -23,7 +23,7 @@ export class ServersComponent {
   }
 
   onServerCreation() {
-    this.serverCreation = 'Server was created';
+    this.serverCreation = 'Server was created. Name is ' + this.serverName;
   }
 
   onUpdateServerName(event: Event) {
