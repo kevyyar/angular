@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
 export class ServersComponent {
   allowNewServer: boolean = false;
   serverCreation: string = 'No server was created';
+  serverCreated: boolean = false;
   serverName: string = '';
 
   constructor() {
@@ -23,6 +24,7 @@ export class ServersComponent {
   }
 
   onServerCreation() {
+    this.serverCreated = true;
     this.serverCreation = 'Server was created. Name is ' + this.serverName;
   }
 

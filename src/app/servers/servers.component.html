@@ -24,6 +24,10 @@
   </button>
   <!-- <span>{{ serverName }}</span> -->
   <!-- <p [innerText]="allowNewServer"></p> -->
-  <p>{{ serverCreation }}</p>
+  <p *ngIf="serverCreated; else noServer">{{ serverCreation }}</p>
+  <ng-template #noServer>
+    <p>{{ serverCreation }}</p>
+  </ng-template>
+
   <app-server></app-server>
 </div>
